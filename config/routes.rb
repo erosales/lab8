@@ -1,11 +1,9 @@
 Lab8::Application.routes.draw do
   resources :users
 
-  get "pages/home"
-
-  get "pages/contact"
-
-  get "pages/new_users"
+  match '/home', :to => 'pages#home'
+  match '/sign-in', :to => 'pages#new_users'
+  match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
