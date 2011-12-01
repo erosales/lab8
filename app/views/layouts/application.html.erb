@@ -9,29 +9,38 @@
 
 <body>
 	<header>
-		<h1><img src="forgetlogo.png" alt="forget.me.not" /></h1>
+		<h1><%= image_tag("forgetlogo.png", :alt => "rss feed") %></h1>
 		<hr/>
 		<h2>
 		  <a href="#"><%= link_to "Home", home_path %></a>|
 		  <a href="#">Login</a>| 
-          <a href="#"><%= link_to "Sign Up", new_user_path %></a>|
-                     
+          <a href="#"><%= link_to "Sign Up", new_user_path %></a>                     
         </h2>
 	</header>
 	
+	<div>
 	<nav>
 		<%= render 'layouts/stylesheets' %>
 		<h3>My Account</h3>
-		    <ul>
+		  <ul>
 			<li><%= link_to "Home", home_path %></li>
 			<li><%= link_to "Sign-up", new_user_path %></li>
 			<li><%= link_to "Contact", contact_path %></li>
-			</ul>
+		  </ul>	
     </nav>
+    
 	
 	<section>
 		<%= yield %>
     </section>
+    
+    
+    <aside> 
+      <h3>Need A Reminder?</h3> 
+        <p>Have an important date? Can't be late? Enter your message
+           and we'll remind you when the time comes.</p> 
+        <p><%= image_tag("forgetlogo2.jpg", :alt => "rss feed") %></p>   
+    </aside>
     
     <footer> 
     	<h2>Footer</h2> 

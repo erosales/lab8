@@ -5,7 +5,6 @@ class PagesController < ApplicationController
   def contact
   end
 
-  def new_users
+  def login
   end
-
 end
