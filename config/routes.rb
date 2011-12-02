@@ -2,7 +2,7 @@ Lab8::Application.routes.draw do
   resources :users
 
   match '/home', :to => 'pages#home'
-  match '/sign-in', :to => 'pages#new_users'
+  match '/login', :to => 'pages#login'
   match '/contact', :to => 'pages#contact'
 
   # The priority is based upon order of creation:
