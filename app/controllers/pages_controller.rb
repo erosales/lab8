@@ -3,11 +3,11 @@ class PagesController < ApplicationController
     @title = "Home"
   end
 
-  def contact
-    @title = "Contact"
-  end
-
   def login
     @title = "Login"
+  end
+  
+  def contact
+    @title = "Contact"
   end
 end
